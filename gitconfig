@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
+	editor = subl -n -w
 
 [alias]
   co = checkout
@@ -37,6 +37,7 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
+	lastchange = log -p --follow -n 1
 
 [help]
   autocorrect = 1
