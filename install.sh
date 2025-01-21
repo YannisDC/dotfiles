@@ -24,6 +24,9 @@ else
     echo "Oh My Zsh already installed"
 fi
 
+# Required for Ghidra
+softwareupdate --install-rosetta --agree-to-license
+
 # Install packages from Brewfile
 if [ -f "Brewfile" ]; then
     echo "Installing packages from Brewfile..."
